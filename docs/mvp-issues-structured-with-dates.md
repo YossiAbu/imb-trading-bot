@@ -16,8 +16,8 @@ It includes:
 ## Parent Issue: [P0] Phase 0 – Pre-Development Requirements
 
 ### Metadata
-Start Date: 2025-02-01
-Due Date: 2025-02-03
+Start Date: 2025-12-01
+Due Date: 2025-12-03
 
 Milestone: Phase 0 – Pre-Development  
 Labels: ["MVP", "infra"]  
@@ -33,8 +33,8 @@ Description:
 #### [T0.1] Provide AWS credentials (IAM user with EC2, S3, CloudWatch)
 
 ### Metadata
-Start Date: 2025-02-01
-Due Date: 2025-02-03
+Start Date: 2025-12-01
+Due Date: 2025-12-03
 
 
 **Goal**  
@@ -57,8 +57,8 @@ Ensure the developer has secure access to AWS resources required for the MVP (EC
 #### [T0.2] Choose exchange for MVP (Binance Testnet recommended)
 
 ### Metadata
-Start Date: 2025-02-01
-Due Date: 2025-02-03
+Start Date: 2025-12-01
+Due Date: 2025-12-03
 
 
 **Goal**  
@@ -80,8 +80,8 @@ Select a single crypto exchange for the MVP (Testnet environment), so all techni
 #### [T0.3] Provide API Keys for chosen Testnet (Read + Trade, No Withdraw)
 
 ### Metadata
-Start Date: 2025-02-01
-Due Date: 2025-02-03
+Start Date: 2025-12-01
+Due Date: 2025-12-03
 
 
 **Goal**  
@@ -103,8 +103,8 @@ Provide secure and limited API keys for Testnet trading: read balances/market da
 #### [T0.4] Decide if Dashboard is included in MVP
 
 ### Metadata
-Start Date: 2025-02-01
-Due Date: 2025-02-03
+Start Date: 2025-12-01
+Due Date: 2025-12-03
 
 
 **Goal**  
@@ -128,8 +128,8 @@ Clarify whether a customer-facing or internal dashboard is part of the month-1 M
 ## Parent Issue: [P1] Phase 1 – Project Setup & Infrastructure
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 Milestone: Phase 1 – Setup & Infrastructure  
 Labels: ["MVP", "backend", "infra"]  
@@ -146,8 +146,8 @@ Description:
 #### [T1.1] Create Git repository and initialize backend project
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 
 **Goal**  
@@ -169,8 +169,8 @@ Create the backend codebase for the IMB Trading Bot with a clean, minimal starti
 #### [T1.2] Define project folder structure (core/, exchange/, config/, api/)
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 
 **Goal**  
@@ -192,8 +192,8 @@ Define a clear, extendable folder structure for the backend code that matches th
 #### [T1.3] Add Dockerfile + docker-compose with backend container
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 
 **Goal**  
@@ -215,8 +215,8 @@ Containerize the backend application so it can run consistently across environme
 #### [T1.4] Launch AWS EC2 instance for DEV environment
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 
 **Goal**  
@@ -238,8 +238,8 @@ Create a development EC2 instance on AWS to host the backend and possibly other 
 #### [T1.5] Setup basic CI/CD pipeline (GitHub Actions: tests + build + deploy)
 
 ### Metadata
-Start Date: 2025-02-02
-Due Date: 2025-02-08
+Start Date: 2025-12-04
+Due Date: 2025-12-08
 
 
 **Goal**  
@@ -265,8 +265,8 @@ Automate the build and basic testing of the backend with GitHub Actions and opti
 ## Parent Issue: [P2] Phase 2 – Exchange Connector
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 Milestone: Phase 2 – Exchange Connector  
 Labels: ["MVP", "exchange", "backend"]  
@@ -283,8 +283,8 @@ Description:
 #### [T2.1] Install ccxt library for exchange integration
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 
 **Goal**  
@@ -305,8 +305,8 @@ Add the `ccxt` library to the project to simplify integration with the chosen ex
 #### [T2.2] Implement basic ExchangeConnector including API key loading
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 
 **Goal**  
@@ -328,8 +328,8 @@ Create a reusable ExchangeConnector module responsible for initializing the ccxt
 #### [T2.3] Implement get_ohlcv and get_ticker functions
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 
 **Goal**  
@@ -351,8 +351,8 @@ Provide reusable methods for retrieving OHLCV candles and the latest ticker from
 #### [T2.4] Implement exchange health-check function
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 
 **Goal**  
@@ -374,8 +374,8 @@ Provide a dedicated health-check function to verify that the ExchangeConnector a
 #### [T2.5] Create API endpoint to return market data from ExchangeConnector
 
 ### Metadata
-Start Date: 2025-02-07
-Due Date: 2025-02-14
+Start Date: 2025-12-09
+Due Date: 2025-12-13
 
 
 **Goal**  
@@ -400,8 +400,8 @@ Expose an HTTP endpoint so external tools or dashboards can access market data v
 ## Parent Issue: [P3] Phase 3 – Trading Core
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 Milestone: Phase 3 – Trading Core  
 Labels: ["MVP", "backend"]  
@@ -418,8 +418,8 @@ Description:
 #### [T3.1] Implement simple rule-based strategy (RSI/EMA)
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 
 **Goal**  
@@ -441,8 +441,8 @@ Create a basic rule-based strategy module that generates BUY/SELL/HOLD signals b
 #### [T3.2] Implement Risk Manager (basic rules: max trades/day etc.)
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 
 **Goal**  
@@ -464,8 +464,8 @@ Add a Risk Manager component that validates strategy signals against risk constr
 #### [T3.3] Implement Execution Engine (build order objects)
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 
 **Goal**  
@@ -488,8 +488,8 @@ Implement an Execution Engine that receives validated signals and converts them 
 #### [T3.4] Implement Paper Trading (simulate trades without real API calls)
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 
 **Goal**  
@@ -511,8 +511,8 @@ Simulate trade execution using order objects without interacting with the real e
 #### [T3.5] Create trading loop: Fetch → Strategy → Risk → Execute
 
 ### Metadata
-Start Date: 2025-02-13
-Due Date: 2025-02-21
+Start Date: 2025-12-14
+Due Date: 2025-12-19
 
 
 **Goal**  
@@ -538,8 +538,8 @@ Build a continuous or scheduled trading loop that orchestrates the full flow of 
 ## Parent Issue: [P4] Phase 4 – Live Testnet Integration
 
 ### Metadata
-Start Date: 2025-02-20
-Due Date: 2025-02-24
+Start Date: 2025-12-20
+Due Date: 2025-12-23
 
 Milestone: Phase 4 – Live Testnet  
 Labels: ["MVP", "exchange"]  
@@ -554,8 +554,8 @@ Description:
 #### [T4.1] Add mode switching: PAPER vs LIVE_TESTNET
 
 ### Metadata
-Start Date: 2025-02-20
-Due Date: 2025-02-24
+Start Date: 2025-12-20
+Due Date: 2025-12-23
 
 
 **Goal**  
@@ -578,8 +578,8 @@ Allow the system to run either in paper-trading mode or Testnet live-trading mod
 #### [T4.2] Implement place_order on Testnet using ExchangeConnector
 
 ### Metadata
-Start Date: 2025-02-20
-Due Date: 2025-02-24
+Start Date: 2025-12-20
+Due Date: 2025-12-23
 
 
 **Goal**  
@@ -601,8 +601,8 @@ Connect the Execution Engine to the exchange to place real Testnet orders when i
 #### [T4.3] Perform live Testnet trade tests with minimal amounts
 
 ### Metadata
-Start Date: 2025-02-20
-Due Date: 2025-02-24
+Start Date: 2025-12-20
+Due Date: 2025-12-23
 
 
 **Goal**  
@@ -626,8 +626,8 @@ Verify that the live Testnet integration behaves as expected by running a few re
 ## Parent Issue: [P5] Phase 5 – Database Layer
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 Milestone: Phase 5 – Database  
 Labels: ["MVP", "database", "backend"]  
@@ -644,8 +644,8 @@ Description:
 #### [T5.1] Deploy PostgreSQL RDS instance
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 
 **Goal**  
@@ -667,8 +667,8 @@ Provision a managed PostgreSQL database on AWS RDS for storing trading data.
 #### [T5.2] Create DB models: Orders, Trades, Positions
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 
 **Goal**  
@@ -690,8 +690,8 @@ Define the schema and ORM models (if using ORM) for Orders, Trades, and Position
 #### [T5.3] Save Orders and Trades to DB
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 
 **Goal**  
@@ -713,8 +713,8 @@ Persist Orders and Trades to the database whenever simulated or live trades occu
 #### [T5.4] Store and update Position states in DB
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 
 **Goal**  
@@ -736,8 +736,8 @@ Maintain an up-to-date representation of open and closed positions in the databa
 #### [T5.5] Add API endpoint to fetch orders/trades history
 
 ### Metadata
-Start Date: 2025-02-23
-Due Date: 2025-02-28
+Start Date: 2025-12-24
+Due Date: 2025-12-27
 
 
 **Goal**  
@@ -761,8 +761,8 @@ Expose an API endpoint that returns historical Orders and Trades for review or f
 ## Parent Issue: [P6] Phase 6 – Monitoring & Security
 
 ### Metadata
-Start Date: 2025-02-27
-Due Date: 2025-03-03
+Start Date: 2025-12-28
+Due Date: 2026-01-01
 
 Milestone: Phase 6 – Monitoring & Security  
 Labels: ["MVP", "infra"]  
@@ -778,8 +778,8 @@ Description:
 #### [T6.1] Send backend logs to CloudWatch Logs
 
 ### Metadata
-Start Date: 2025-02-27
-Due Date: 2025-03-03
+Start Date: 2025-12-28
+Due Date: 2026-01-01
 
 
 **Goal**  
@@ -801,8 +801,8 @@ Centralize backend logs in AWS CloudWatch for easier debugging and monitoring.
 #### [T6.2] Add CloudWatch metrics (CPU, errors, trade count)
 
 ### Metadata
-Start Date: 2025-02-27
-Due Date: 2025-03-03
+Start Date: 2025-12-28
+Due Date: 2026-01-01
 
 
 **Goal**  
@@ -824,8 +824,8 @@ Monitor key metrics (resource usage and trading behavior) using CloudWatch Metri
 #### [T6.3] Setup CloudWatch alerts for critical failures
 
 ### Metadata
-Start Date: 2025-02-27
-Due Date: 2025-03-03
+Start Date: 2025-12-28
+Due Date: 2026-01-01
 
 
 **Goal**  
@@ -847,8 +847,8 @@ Create alerts to notify about critical conditions such as high error rates or sy
 #### [T6.4] Implement secure storage for API keys (KMS or encrypted file)
 
 ### Metadata
-Start Date: 2025-02-27
-Due Date: 2025-03-03
+Start Date: 2025-12-28
+Due Date: 2026-01-01
 
 
 **Goal**  
@@ -872,8 +872,8 @@ Ensure that API keys and other secrets are stored and accessed securely, not har
 ## Parent Issue: [P7] Phase 7 – Dashboard (Optional)
 
 ### Metadata
-Start Date: 2025-03-01
-Due Date: 2025-03-10
+Start Date: 2026-01-02
+Due Date: 2026-01-10
 
 Milestone: Phase 7 – Dashboard  
 Labels: ["MVP", "dashboard"]  
@@ -888,8 +888,8 @@ Description:
 #### [T7.1] Create basic frontend project (React/Next)
 
 ### Metadata
-Start Date: 2025-03-01
-Due Date: 2025-03-10
+Start Date: 2026-01-02
+Due Date: 2026-01-10
 
 
 **Goal**  
@@ -911,8 +911,8 @@ Initialize a minimal frontend project to serve as a dashboard for the IMB Tradin
 #### [T7.2] Add page to show orders/trades from API
 
 ### Metadata
-Start Date: 2025-03-01
-Due Date: 2025-03-10
+Start Date: 2026-01-02
+Due Date: 2026-01-10
 
 
 **Goal**  
@@ -934,8 +934,8 @@ Display historical orders and trades fetched from the backend API.
 #### [T7.3] Add bot status page (running / stopped / errors)
 
 ### Metadata
-Start Date: 2025-03-01
-Due Date: 2025-03-10
+Start Date: 2026-01-02
+Due Date: 2026-01-10
 
 
 **Goal**  
